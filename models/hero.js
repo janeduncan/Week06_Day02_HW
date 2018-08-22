@@ -19,4 +19,11 @@ Hero.prototype.eatFood = function(food) {
   }
 }
 
+Hero.prototype.sortByDifficultyHardest = function() {
+  this.tasks.sort(function(a, b){
+    return b.difficulty - a.difficulty;
+    }
+  )
+}
+
 module.exports = Hero;
