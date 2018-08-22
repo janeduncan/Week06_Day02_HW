@@ -7,7 +7,7 @@ The task is to test drive the beginnings of an adventure game!
 A.
 Create a constructor to create a Hero character
 
-- A Hero has a name
+- [x] A Hero has a name
 - A Hero has health
 - A Hero has a favourite food
 - A Hero can talk saying their name
