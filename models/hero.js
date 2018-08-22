@@ -19,11 +19,18 @@ Hero.prototype.eatFood = function(food) {
   }
 }
 
-Hero.prototype.sortByDifficultyHardest = function() {
-  this.tasks.sort(function(a, b){
-    return b.difficulty - a.difficulty;
-    }
-  )
-}
+// Hero.prototype.sortByDifficultyHardest = function() {
+//   this.tasks.sort(function(taska, taskb){
+//     return taskb.difficulty - taska.difficulty;
+//     }
+//   )
+// }
+
+// Hero.prototype.sortByDifficulty = function() {
+//  function sortDifficulty(a, b) {
+//    return a.difficulty - b.difficulty;
+//  }
+//  return this.tasks.sort(sortDifficulty);
+// }
 
 module.exports = Hero;

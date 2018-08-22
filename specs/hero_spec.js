@@ -1,6 +1,7 @@
 const assert = require("assert");
 const Hero = require("../models/hero.js");
 const Task = require("../models/task.js");
+const Food = require("../models/food.js");
 
 describe("Hero", function(){
 
@@ -35,10 +36,17 @@ describe("Hero", function(){
       assert.strictEqual(actual, "Hello, I am Charlie!")
     });
 
-    it("Should sort by difficulty: hardest", function(){
-      hero.sortByDifficultyHardest()
-      const actual = hero.tasks;
-      assert.deepEqual(actual, [task2, task1])
+    it("Should be able to eat food", function(){
+        const food = new Food("Orange", 30)
+        hero.eatFood(food);
+        const actual = hero.health;
+        assert.strictEqual(actual, 130)
     });
+
+    // it("Should sort by difficulty: hardest", function(){
+    //   hero.sortByDifficulty()
+    //   const actual = hero.tasks;
+    //   assert.strictEqual(actual, [task2, task1])
+    // });
 
 })

@@ -13,7 +13,7 @@ describe("Food", function(){
       assert.strictEqual(actual, "Sausage")
     });
 
-    it("Should have replenishment", function(){
+    it("Should have replenishment level", function(){
       const actual = food.replenishment;
       assert.strictEqual(actual, 100)
     });
